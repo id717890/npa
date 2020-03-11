@@ -1,0 +1,56 @@
+.t1 {
+  font-size: 72px;
+  line-height: 80px;
+  text-transform: uppercase;
+  color: #83c85b;
+}
+
+.t2 {
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 300;
+}
+
+.t3 {
+  font-size: 18px;
+  padding: 0 0 20px 40px;
+  position: relative;
+  line-height: 20px;
+  font-weight: 300;
+  z-index: 1;
+  text-align: left;
+}
+
+.t3::before {
+  content: "";
+  display: block;
+  background: url('../public/img/m13-b.png') no-repeat;
+  width: 28px;
+  height: 30px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.bg1 {
+  width: 100%;
+  position: relative;
+  background-size: cover;
+  background-image: url('../public/img/bg13.jpg');
+  background-position: 50% 0;
+}
+
+.glister-item {
+  // background: #6189c4;
+}
+
+.glister-item-header {
+  color: #6189c4;
+  margin: 10px -20px 0 0;
+  font-size: 24px;
+  line-height: 26px;
+  position: relative;
+  z-index: 1;
+  text-transform: uppercase;
+  font-weight: 700;
+}

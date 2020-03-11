@@ -6,6 +6,10 @@ import vuetify from './plugins/vuetify'
 import 'bootstrap'
 import 'bootstrap/dist/css/bootstrap.min.css'
 
+import 'aos/dist/aos.css'
+import AOS from 'aos'
+AOS.init()
+
 Vue.config.productionTip = false
 
 new Vue({
