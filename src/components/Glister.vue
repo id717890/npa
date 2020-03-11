@@ -28,7 +28,7 @@
       </v-img>
     </v-col>
     <v-col cols="12">
-      <v-row no-gutters class="py-5">
+      <v-row no-gutters class="py-12">
         <v-col lg="4" offset-lg="2" md="6" sm="12" cols="12">
           <div class="d-flex flex-row flex-nowrap align-center justify-center">
             <div>
@@ -160,7 +160,13 @@
       <div class="glister-item">
         <v-row no-gutters>
           <v-col cols="12" lg="4" offset-lg="2" class="text-center">
-            <img :src="require('../../public/img/g-item-schetky.jpg')" alt="" />
+            <img
+              :src="require('../../public/img/g-item-schetky.jpg')"
+              alt=""
+              data-aos="flip-right"
+              data-aos-duration="800"
+              data-aos-delay="300"
+            />
           </v-col>
           <v-col
             cols="12"
@@ -183,6 +189,23 @@
               Эргономичная форма ручки удобна, не скользит и обеспечивает полный
               контроль за чисткой зубов.
             </div>
+            <div
+              class="d-flex flex-row flex-wrap justify-space-between px-10 w100"
+            >
+              <v-btn
+                large
+                color="teal"
+                outlined
+                @click="openAmway('https://www.amway.ru/p/100957')"
+              >
+                <v-icon class="mr-3">mdi-web</v-icon>
+                Подробнее
+              </v-btn>
+              <v-btn dark large color="success">
+                <v-icon class="mr-3">mdi-basket</v-icon>
+                Заказать
+              </v-btn>
+            </div>
           </v-col>
         </v-row>
       </div>
@@ -191,7 +214,13 @@
       <div class="glister-item">
         <v-row no-gutters>
           <v-col cols="12" lg="4" class="text-center order-lg-2">
-            <img :src="require('../../public/img/g-item-pasta.jpg')" alt="" />
+            <img
+              :src="require('../../public/img/g-item-pasta.jpg')"
+              alt=""
+              data-aos="flip-right"
+              data-aos-duration="800"
+              data-aos-delay="300"
+            />
           </v-col>
           <v-col
             cols="12"
@@ -216,6 +245,23 @@
               Формула REMINACT™ способствует реминерализации зубной эмали,
               делает зубы крепче и предотвращает образование кариеса.
             </div>
+            <div
+              class="d-flex flex-row flex-wrap justify-space-between px-10 w100"
+            >
+              <v-btn
+                large
+                color="teal"
+                outlined
+                @click="openAmway('https://www.amway.ru/p/6833')"
+              >
+                <v-icon class="mr-3">mdi-web</v-icon>
+                Подробнее
+              </v-btn>
+              <v-btn dark large color="success">
+                <v-icon class="mr-3">mdi-basket</v-icon>
+                Заказать
+              </v-btn>
+            </div>
           </v-col>
         </v-row>
       </div>
@@ -228,6 +274,9 @@
               style="max-height: 400px"
               :src="require('../../public/img/g-item-liquid.jpg')"
               alt=""
+              data-aos="flip-right"
+              data-aos-duration="800"
+              data-aos-delay="300"
             />
           </v-col>
           <v-col
@@ -245,6 +294,23 @@
             <div class="t3">
               Освежает дыхание, обладает мятным вкусом.
             </div>
+            <div
+              class="d-flex flex-row flex-wrap justify-space-between px-10 w100"
+            >
+              <v-btn
+                large
+                color="teal"
+                outlined
+                @click="openAmway('https://www.amway.ru/p/9949')"
+              >
+                <v-icon class="mr-3">mdi-web</v-icon>
+                Подробнее
+              </v-btn>
+              <v-btn dark large color="success">
+                <v-icon class="mr-3">mdi-basket</v-icon>
+                Заказать
+              </v-btn>
+            </div>
           </v-col>
         </v-row>
       </div>
@@ -253,7 +319,13 @@
       <div class="glister-item">
         <v-row no-gutters>
           <v-col cols="12" lg="4" class="text-center order-lg-2">
-            <img :src="require('../../public/img/g-item-sprey.jpg')" alt="" />
+            <img
+              :src="require('../../public/img/g-item-sprey.jpg')"
+              alt=""
+              data-aos="flip-right"
+              data-aos-duration="800"
+              data-aos-delay="300"
+            />
           </v-col>
           <v-col
             cols="12"
@@ -275,6 +347,23 @@
             <div class="t3">
               Легко помещается в кармане.
             </div>
+            <div
+              class="d-flex flex-row flex-wrap justify-space-between px-10 w100"
+            >
+              <v-btn
+                large
+                color="teal"
+                outlined
+                @click="openAmway('https://www.amway.ru/p/120351')"
+              >
+                <v-icon class="mr-3">mdi-web</v-icon>
+                Подробнее
+              </v-btn>
+              <v-btn dark large color="success">
+                <v-icon class="mr-3">mdi-basket</v-icon>
+                Заказать
+              </v-btn>
+            </div>
           </v-col>
         </v-row>
       </div>
@@ -283,7 +372,13 @@
       <div class="glister-item">
         <v-row no-gutters>
           <v-col cols="12" lg="4" offset-lg="2" class="text-center">
-            <img :src="require('../../public/img/g-item-nit.jpg')" alt="" />
+            <img
+              :src="require('../../public/img/g-item-nit.jpg')"
+              alt=""
+              data-aos="flip-right"
+              data-aos-duration="800"
+              data-aos-delay="300"
+            />
           </v-col>
           <v-col
             cols="12"
@@ -298,6 +393,23 @@
               Невощеная тонкая зубная нить не повреждает десны и бережно очищает
               межзубные промежутки, не расщепляясь и не оставляя волокон.
             </div>
+            <div
+              class="d-flex flex-row flex-wrap justify-space-between px-10 w100"
+            >
+              <v-btn
+                large
+                color="teal"
+                outlined
+                @click="openAmway('https://www.amway.ru/p/0994')"
+              >
+                <v-icon class="mr-3">mdi-web</v-icon>
+                Подробнее
+              </v-btn>
+              <v-btn dark large color="success">
+                <v-icon class="mr-3">mdi-basket</v-icon>
+                Заказать
+              </v-btn>
+            </div>
           </v-col>
         </v-row>
       </div>
@@ -308,6 +420,9 @@
 <script>
 export default {
   methods: {
+    openAmway(url) {
+      window.open(url, '_blank')
+    },
     scrollTo(e, elementName) {
       e.preventDefault()
       let element = this.$refs[elementName]

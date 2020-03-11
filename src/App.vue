@@ -33,6 +33,7 @@
         fluid
       >
         <glister />
+        <glister-kids />
         <!-- <v-row align="center" justify="center">
           <v-col class="text-center">
             <v-tooltip left>
@@ -70,12 +71,14 @@
 
 <script>
 import Glister from './components/Glister'
+import GlisterKids from './components/GlisterKids'
 export default {
   props: {
     source: String
   },
   components: {
-    Glister
+    Glister,
+    GlisterKids
   },
   data: () => ({
     drawer: null
