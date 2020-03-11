@@ -1,5 +1,6 @@
 <template>
   <v-app id="inspire">
+    <modals-container />
     <v-navigation-drawer v-model="drawer" app temporary>
       <v-list dense>
         <v-list-item link>

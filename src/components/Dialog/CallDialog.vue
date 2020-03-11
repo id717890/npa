@@ -4,26 +4,20 @@
       <v-col sm="12" cols="12" v-if="form">
         <v-form lazy-validation v-model="valid" ref="form">
           <v-container>
-            <!-- <v-row>
-              <v-col class="text-center">
-                <i class="fa fa-phone-square primary--text fa-3x"></i>
-                <h3>Заказать обратный звонок.</h3>
-              </v-col>
-            </v-row> -->
             <v-row>
               <v-col sm="12" cols="12">
-                <!-- <v-text-field v-model="name" label="Имя" required></v-text-field> -->
-                <v-text-field
+                <v-alert type="info">
+                  {{ notify }}
+                </v-alert>
+                <v-textarea
+                  :autofocus="true"
+                  filled
                   v-model="contact"
                   :rules="contactRules"
-                  :counter="50"
-                  :label="language === 'en' ? labelEn : labelRu"
+                  :counter="100"
                   required
-                ></v-text-field>
+                ></v-textarea>
               </v-col>
-              <!-- <v-col sm="12" cols="12">
-                <v-text-field v-model="phone" :rules="textField"  label="Телефон" required></v-text-field>
-              </v-col> -->
               <v-col sm="12" class="text-center" cols="12">
                 <v-btn
                   :disabled="!valid"
@@ -34,7 +28,7 @@
                   @click="submit"
                   class="w100"
                 >
-                  <i class="fa fa-check fa-2x"></i>
+                  <v-icon>mdi-check</v-icon>
                   ОК
                 </v-btn>
               </v-col>
@@ -75,13 +69,19 @@ export default {
     loading: false,
     valid: true,
     contact: null,
-    labelRu: 'Введите имя, E-mail или телефон для связи',
-    labelEn: 'Type your name, E-mail or phone to contact you',
+    labelRu:
+      'Введите имя, контакты для связи (E-mail или телефон) и краткое сообщение',
+    notify:
+      'Не забудьте указать имя и контакты (E-mail или телефон) чтобы мы могли связаться с Вами',
     contactRules: [
-      v => !!v || 'Field is required',
-      v => (v && v.length <= 50) || 'Name must be less than 50 characters'
+      v => !!v || 'Поле не должно быть пустым',
+      v =>
+        (v && v.length <= 100) || 'Поле должно содержать не более 100 символов'
     ]
   }),
+  mounted() {
+    this.contact = this.result
+  },
   methods: {
     ...mapActions(['createCallback']),
     reset() {
@@ -93,7 +93,7 @@ export default {
       e.preventDefault()
       this.loading = true
       if (this.$refs.form.validate()) {
-        this.createCallback({ contact: this.contact, result: this.result })
+        this.createCallback({ contact: 'Amway сайт', result: this.contact })
           .then(() => {
             this.loading = false
             this.form = false
@@ -102,14 +102,9 @@ export default {
               Alert,
               {
                 type: 'success',
-                message:
-                  this.language === 'en'
-                    ? 'Request sent successfully!'
-                    : 'Запрос успешно отправлен!',
+                message: 'Запрос успешно отправлен!',
                 message2:
-                  this.language === 'en'
-                    ? 'If you had typed correct contacts, I will contact you soon'
-                    : 'Если Вы правильно указали свои контакты, я свяжусь с Вами в ближайшее время.'
+                  'Если Вы правильно указали свои контакты, мы свяжемся с Вами в ближайшее время.'
               },
               settings
             )
@@ -121,10 +116,7 @@ export default {
               Alert,
               {
                 type: 'error',
-                message:
-                  this.language === 'en'
-                    ? 'Request error!'
-                    : 'Ошибка при отправке запроса!',
+                message: 'Ошибка при отправке запроса!',
                 message2: x
               },
               settings

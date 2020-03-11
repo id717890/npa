@@ -159,7 +159,7 @@
     <v-col cols="12" ref="schetky">
       <div class="glister-item">
         <v-row no-gutters>
-          <v-col cols="12" lg="4" offset-lg="2" class="text-center">
+          <v-col cols="12" lg="4" offset-lg="2" class="text-center pt-5">
             <img
               :src="require('../../public/img/g-item-schetky.jpg')"
               alt=""
@@ -201,7 +201,12 @@
                 <v-icon class="mr-3">mdi-web</v-icon>
                 Подробнее
               </v-btn>
-              <v-btn dark large color="success">
+              <v-btn
+                dark
+                large
+                color="success"
+                @click="showCallDialog($event, 1)"
+              >
                 <v-icon class="mr-3">mdi-basket</v-icon>
                 Заказать
               </v-btn>
@@ -257,7 +262,12 @@
                 <v-icon class="mr-3">mdi-web</v-icon>
                 Подробнее
               </v-btn>
-              <v-btn dark large color="success">
+              <v-btn
+                dark
+                large
+                color="success"
+                @click="showCallDialog($event, 2)"
+              >
                 <v-icon class="mr-3">mdi-basket</v-icon>
                 Заказать
               </v-btn>
@@ -306,7 +316,12 @@
                 <v-icon class="mr-3">mdi-web</v-icon>
                 Подробнее
               </v-btn>
-              <v-btn dark large color="success">
+              <v-btn
+                dark
+                large
+                color="success"
+                @click="showCallDialog($event, 3)"
+              >
                 <v-icon class="mr-3">mdi-basket</v-icon>
                 Заказать
               </v-btn>
@@ -359,7 +374,12 @@
                 <v-icon class="mr-3">mdi-web</v-icon>
                 Подробнее
               </v-btn>
-              <v-btn dark large color="success">
+              <v-btn
+                dark
+                large
+                color="success"
+                @click="showCallDialog($event, 4)"
+              >
                 <v-icon class="mr-3">mdi-basket</v-icon>
                 Заказать
               </v-btn>
@@ -405,7 +425,12 @@
                 <v-icon class="mr-3">mdi-web</v-icon>
                 Подробнее
               </v-btn>
-              <v-btn dark large color="success">
+              <v-btn
+                dark
+                large
+                color="success"
+                @click="showCallDialog($event, 5)"
+              >
                 <v-icon class="mr-3">mdi-basket</v-icon>
                 Заказать
               </v-btn>
@@ -418,8 +443,32 @@
 </template>
 
 <script>
+import CallDialog from './Dialog/CallDialog'
+const settings = {
+  height: 'auto',
+  maxWidth: 430,
+  adaptive: true,
+  transition: 'nice-modal-fade',
+  clickToClose: true
+}
 export default {
+  data: () => ({
+    products: [
+      { id: 1, text: 'УНИВЕРСАЛЬНЫЕ ЗУБНЫЕ ЩЕТКИ' },
+      { id: 2, text: 'МНОГОФУНКЦИОНАЛЬНАЯ ЗУБНАЯ ПАСТА' },
+      { id: 3, text: 'КОНЦЕНТРИРОВАННАЯ ЖИДКОСТЬ ДЛЯ ПОЛОСКАНИЯ ПОЛОСТИ РТА' },
+      { id: 4, text: 'СПРЕЙ-ОСВЕЖИТЕЛЬ С ЗАПАХОМ МЯТЫ' },
+      { id: 5, text: 'ЗУБНАЯ НИТЬ' }
+    ]
+  }),
   methods: {
+    showCallDialog(e, product) {
+      e.preventDefault()
+      let result = ''
+      const find = this.products.find(x => x.id === product)
+      if (find) result = find.text + '\r\n'
+      this.$modal.show(CallDialog, { result: result }, settings)
+    },
     openAmway(url) {
       window.open(url, '_blank')
     },
