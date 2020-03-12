@@ -4,7 +4,7 @@
       <v-col sm="12" cols="12" v-if="form">
         <v-form lazy-validation v-model="valid" ref="form">
           <v-container>
-            <v-row>
+            <v-row no-gutters>
               <v-col sm="12" cols="12">
                 <v-alert type="info">
                   {{ notify }}

@@ -33,7 +33,8 @@
         style="max-width: none"
         fluid
       >
-        <glister />
+        <glister class="hidden-sm-and-down" />
+        <glister-mobile class="hidden-md-and-up" />
         <glister-kids />
         <!-- <v-row align="center" justify="center">
           <v-col class="text-center">
@@ -72,6 +73,7 @@
 
 <script>
 import Glister from './components/Glister'
+import GlisterMobile from './components/GlisterMobile'
 import GlisterKids from './components/GlisterKids'
 export default {
   props: {
@@ -79,6 +81,7 @@ export default {
   },
   components: {
     Glister,
+    GlisterMobile,
     GlisterKids
   },
   data: () => ({

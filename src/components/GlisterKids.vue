@@ -1,5 +1,5 @@
 <template>
-  <v-row>
+  <v-row no-gutters>
     <v-col cols="12">
       <v-img :src="require('../../public/img/bg15.jpg')">
         <div class="d-flex flex-row h100 w100 text-left">
