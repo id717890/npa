@@ -1,18 +1,32 @@
 <template>
-  <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png" />
-    <HelloWorld msg="Welcome to Your Vue.js App" />
-  </div>
+  <section class="w100">
+    <glister class="hidden-sm-and-down" />
+    <glister-mobile class="hidden-md-and-up" />
+    <glister-kids class="hidden-sm-and-down" />
+    <glister-kids-mobile class="hidden-md-and-up" />
+  </section>
 </template>
 
 <script>
-// @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue'
-
+import Glister from '../components/Glister'
+import GlisterMobile from '../components/GlisterMobile'
+import GlisterKids from '../components/GlisterKids'
+import GlisterKidsMobile from '../components/GlisterKidsMobile'
 export default {
-  name: 'Home',
+  props: {
+    source: String
+  },
   components: {
-    HelloWorld
+    Glister,
+    GlisterMobile,
+    GlisterKids,
+    GlisterKidsMobile
+  },
+  data: () => ({
+    drawer: null
+  }),
+  methods: {
+    layoutColor(area) {}
   }
 }
 </script>
