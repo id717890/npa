@@ -2,7 +2,7 @@
   <v-row no-gutters>
     <v-col cols="12">
       <v-img :src="require('../../public/img/bg10.jpg')">
-        <div class="d-flex flex-row h100 w100 text-left">
+        <header class="d-flex flex-row h100 w100 text-left">
           <div
             class="justify-center d-flex flex-column  align-start px-12 ml-12"
             style="flex: 1 1 50%"
@@ -24,7 +24,7 @@
             </div>
           </div>
           <div class="" style="flex: 1 1  50%"></div>
-        </div>
+        </header>
       </v-img>
     </v-col>
     <v-col cols="12">

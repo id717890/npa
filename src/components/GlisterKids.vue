@@ -37,7 +37,7 @@
       </v-img>
     </v-col>
     <v-col cols="12">
-      <div class="t6 text-center">КРЕПКИЕ ЗУБКИ С GLISTER™ KIDS</div>
+      <div class="t6 text-center pt-12">КРЕПКИЕ ЗУБКИ С GLISTER™ KIDS</div>
       <div class="t7  text-center">
         <b>Glister™ Kids</b> – линейка средств по уходу за полостью рта
         специально разработана для детей от 2-х лет.
