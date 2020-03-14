@@ -3,7 +3,7 @@
     <modals-container />
     <v-navigation-drawer v-model="drawer" app temporary>
       <v-list dense>
-        <v-list-item link>
+        <v-list-item link @click="scrollToTop">
           <v-list-item-action>
             <v-icon>mdi-home</v-icon>
           </v-list-item-action>
@@ -238,6 +238,7 @@ export default {
   methods: {
     scrollToTop() {
       window.scrollTo({ top: 0, left: 0, behavior: 'smooth' })
+      this.drawer = false
     },
     layoutColor(area) {
       if (this.$router.currentRoute.path === '/') return 'green darken-2'

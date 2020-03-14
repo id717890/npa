@@ -6,12 +6,16 @@ import vuetify from './plugins/vuetify'
 import 'bootstrap'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import VueJsModal from 'vue-js-modal'
-
+import VueAnalytics from 'vue-analytics'
 import 'aos/dist/aos.css'
 import AOS from 'aos'
 AOS.init()
 Vue.use(VueJsModal, { dynamic: true })
 Vue.config.productionTip = false
+
+Vue.use(VueAnalytics, {
+  id: 'UA-62478858-9'
+})
 
 import AxiosConfig from './api/http-config'
 Vue.$http = AxiosConfig
