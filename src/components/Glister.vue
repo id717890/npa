@@ -110,7 +110,7 @@
           </v-col>
           <v-col cols="12" md="4" sm="12" class="text-center">
             <img
-              :src="require('../../public/img/glitster-products.png')"
+              :src="require('../../public/img/glitster-products.webp')"
               alt=""
             />
           </v-col>
@@ -282,7 +282,7 @@
           <v-col cols="12" lg="4" offset-lg="2" class="text-center">
             <img
               style="max-height: 400px"
-              :src="require('../../public/img/g-item-liquid.jpg')"
+              :src="require('../../public/img/g-item-liquid.webp')"
               alt=""
               data-aos="flip-right"
               data-aos-duration="800"

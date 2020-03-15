@@ -152,7 +152,7 @@
       <div>
         <img
           class="schetka-img"
-          :src="require('../../public/img/g-item-pasta-kids.jpg')"
+          :src="require('../../public/img/g-item-pasta-kids.webp')"
           data-aos="flip-left"
           data-aos-duration="1000"
           data-aos-delay="900"

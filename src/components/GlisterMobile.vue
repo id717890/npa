@@ -56,7 +56,7 @@
         <v-row class="py-12" no-gutters>
           <v-col cols="12" class="text-center">
             <img
-              :src="require('../../public/img/glitster-products.png')"
+              :src="require('../../public/img/glitster-products.webp')"
               alt=""
             />
           </v-col>
@@ -259,7 +259,7 @@
           <v-col cols="12" class="text-center">
             <img
               style="max-height: 400px"
-              :src="require('../../public/img/g-item-liquid.jpg')"
+              :src="require('../../public/img/g-item-liquid.webp')"
               alt=""
               data-aos="flip-right"
               data-aos-duration="800"
