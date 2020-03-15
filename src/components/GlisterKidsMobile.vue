@@ -126,6 +126,7 @@
           large
           color="teal"
           outlined
+          class="w100 mb-3"
           @click="
             openAmway(
               'https://www.amway.ru/glister-kids-zubnye-shchetki/p/120522'
@@ -135,7 +136,13 @@
           <v-icon class="mr-3">mdi-web</v-icon>
           Подробнее
         </v-btn>
-        <v-btn dark large color="success" @click="showCallDialog($event, 1)">
+        <v-btn
+          dark
+          large
+          color="success"
+          @click="showCallDialog($event, 1)"
+          class="w100 mb-3"
+        >
           <v-icon class="mr-3">mdi-basket</v-icon>
           Заказать
         </v-btn>
@@ -168,6 +175,7 @@
           large
           color="teal"
           outlined
+          class="w100 mb-3"
           @click="
             openAmway(
               'https://www.amway.ru/glister-kids-detskaya-zubnaya-pasta/p/120519'
@@ -177,7 +185,13 @@
           <v-icon class="mr-3">mdi-web</v-icon>
           Подробнее
         </v-btn>
-        <v-btn dark large color="success" @click="showCallDialog($event, 2)">
+        <v-btn
+          dark
+          large
+          color="success"
+          @click="showCallDialog($event, 2)"
+          class="w100 mb-3"
+        >
           <v-icon class="mr-3">mdi-basket</v-icon>
           Заказать
         </v-btn>

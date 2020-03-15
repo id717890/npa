@@ -21,7 +21,7 @@
               <img :src="require('../../public/img/logo-glister.png')" />
             </div>
             <div
-              class="t2 text-white px-6 text-justify"
+              class="t2 text-white px-6 pb-6 text-justify"
               style="text-shadow: 2px 2px 4px black, 0 0 1em black;"
             >
               Glister™ от&nbsp;Amway это уникальный комплексный набор
@@ -170,6 +170,7 @@
               <v-btn
                 large
                 color="teal"
+                class="w100 mb-3"
                 outlined
                 @click="openAmway('https://www.amway.ru/p/100957')"
               >
@@ -180,6 +181,7 @@
                 dark
                 large
                 color="success"
+                class="w100"
                 @click="showCallDialog($event, 1)"
               >
                 <v-icon class="mr-3">mdi-basket</v-icon>
@@ -230,6 +232,7 @@
                 large
                 color="teal"
                 outlined
+                class="w100 mb-3"
                 @click="openAmway('https://www.amway.ru/p/6833')"
               >
                 <v-icon class="mr-3">mdi-web</v-icon>
@@ -239,6 +242,7 @@
                 dark
                 large
                 color="success"
+                class="w100"
                 @click="showCallDialog($event, 2)"
               >
                 <v-icon class="mr-3">mdi-basket</v-icon>
@@ -283,6 +287,7 @@
                 large
                 color="teal"
                 outlined
+                class="w100 mb-3"
                 @click="openAmway('https://www.amway.ru/p/9949')"
               >
                 <v-icon class="mr-3">mdi-web</v-icon>
@@ -292,6 +297,7 @@
                 dark
                 large
                 color="success"
+                class="w100"
                 @click="showCallDialog($event, 3)"
               >
                 <v-icon class="mr-3">mdi-basket</v-icon>
@@ -339,6 +345,7 @@
                 large
                 color="teal"
                 outlined
+                class="w100 mb-3"
                 @click="openAmway('https://www.amway.ru/p/120351')"
               >
                 <v-icon class="mr-3">mdi-web</v-icon>
@@ -348,6 +355,7 @@
                 dark
                 large
                 color="success"
+                class="w100"
                 @click="showCallDialog($event, 4)"
               >
                 <v-icon class="mr-3">mdi-basket</v-icon>
@@ -389,6 +397,7 @@
                 large
                 color="teal"
                 outlined
+                class="w100 mb-3"
                 @click="openAmway('https://www.amway.ru/p/0994')"
               >
                 <v-icon class="mr-3">mdi-web</v-icon>
@@ -398,6 +407,7 @@
                 dark
                 large
                 color="success"
+                class="w100"
                 @click="showCallDialog($event, 5)"
               >
                 <v-icon class="mr-3">mdi-basket</v-icon>
