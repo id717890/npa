@@ -43,7 +43,10 @@
           уже более 50 лет во всём мире.
         </v-col>
         <v-col cols="12" class="text-center pt-5">
-          <img :src="require('../../public/img/logo-stomatology.jpg')" alt="" />
+          <img
+            :src="require('../../public/img/logo-stomatology.webp')"
+            alt=""
+          />
         </v-col>
         <v-col cols="12" class="text-center">
           <span style="font-weight: 500">Одобрено </span>
@@ -137,7 +140,7 @@
         <v-row no-gutters>
           <v-col cols="12" class="text-center pt-5">
             <img
-              :src="require('../../public/img/g-item-schetky.jpg')"
+              :src="require('../../public/img/g-item-schetky.webp')"
               alt=""
               data-aos="flip-right"
               data-aos-duration="800"
@@ -197,7 +200,7 @@
         <v-row no-gutters>
           <v-col cols="12" class="text-center order-lg-2">
             <img
-              :src="require('../../public/img/g-item-pasta.jpg')"
+              :src="require('../../public/img/g-item-pasta.webp')"
               alt=""
               data-aos="flip-right"
               data-aos-duration="800"

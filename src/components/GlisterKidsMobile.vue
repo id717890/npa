@@ -75,7 +75,7 @@
     <v-col cols="12" class="text-center">
       <img
         class="mt-6"
-        :src="require('../../public/img/logo-stomatology.jpg')"
+        :src="require('../../public/img/logo-stomatology.webp')"
         data-aos="flip-left"
         data-aos-duration="2000"
       />
@@ -87,28 +87,28 @@
       <div>
         <img
           class="schetka-img"
-          :src="require('../../public/img/g-item-schetka-1.jpg')"
+          :src="require('../../public/img/g-item-schetka-1.webp')"
           data-aos="flip-left"
           data-aos-duration="1000"
           data-aos-delay="400"
         />
         <img
           class="schetka-img"
-          :src="require('../../public/img/g-item-schetka-2.jpg')"
+          :src="require('../../public/img/g-item-schetka-2.webp')"
           data-aos="flip-left"
           data-aos-duration="1000"
           data-aos-delay="500"
         />
         <img
           class="schetka-img"
-          :src="require('../../public/img/g-item-schetka-3.jpg')"
+          :src="require('../../public/img/g-item-schetka-3.webp')"
           data-aos="flip-left"
           data-aos-duration="1000"
           data-aos-delay="600"
         />
         <img
           class="schetka-img"
-          :src="require('../../public/img/g-item-schetka-4.jpg')"
+          :src="require('../../public/img/g-item-schetka-4.webp')"
           data-aos="flip-left"
           data-aos-duration="1000"
           data-aos-delay="700"

@@ -48,7 +48,7 @@
           <div class="d-flex flex-row flex-nowrap align-center justify-center">
             <div>
               <img
-                :src="require('../../public/img/logo-stomatology.jpg')"
+                :src="require('../../public/img/logo-stomatology.webp')"
                 alt=""
               />
             </div>
@@ -161,7 +161,7 @@
         <v-row no-gutters>
           <v-col cols="12" lg="4" offset-lg="2" class="text-center pt-5">
             <img
-              :src="require('../../public/img/g-item-schetky.jpg')"
+              :src="require('../../public/img/g-item-schetky.webp')"
               alt=""
               data-aos="flip-right"
               data-aos-duration="800"
@@ -220,7 +220,7 @@
         <v-row no-gutters>
           <v-col cols="12" lg="4" class="text-center order-lg-2">
             <img
-              :src="require('../../public/img/g-item-pasta.jpg')"
+              :src="require('../../public/img/g-item-pasta.webp')"
               alt=""
               data-aos="flip-right"
               data-aos-duration="800"

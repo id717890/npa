@@ -29,3 +29,26 @@ a {
 .social-icon1 {
   max-height: 40px;
 }
+
+// .router-fade-enter,
+// .router-fade-leave {
+//   opacity: 0;
+// }
+
+.router-fade-enter {
+  opacity: 0;
+  transform: translate(2em, 0);
+}
+
+.router-fade-leave-active {
+  opacity: 0;
+  transform: translate(-2em, 0);
+}
+
+.router-fade-enter-active,
+.router-fade-leave-active {
+  transition-duration: 0.5s;
+  transition-property: height, opacity, transform;
+  transition-timing-function: cubic-bezier(0.55, 0, 0.1, 1);
+  overflow: hidden;
+}
