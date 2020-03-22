@@ -85,6 +85,13 @@
           <img :src="require('../public/img/n3.png')" class="mr-2" alt="" />
           Уход за зубами
         </v-btn>
+        <v-btn text class="" to="/home">
+          <img
+            :src="require('../public/img/logo-home.webp')"
+            class="mr-2"
+            alt=""
+          />
+        </v-btn>
         <v-btn text class="" to="/skin">
           <img :src="require('../public/img/n1.png')" class="mr-2" alt="" />
           Уход за кожей
@@ -288,10 +295,11 @@ export default {
       this.drawer = false
     },
     layoutColor(area) {
-      if (this.$router.currentRoute.path === '/') return 'green darken-2'
+      if (this.$router.currentRoute.path === '/') return 'green '
       if (this.$router.currentRoute.path === '/skin')
         return 'deep-orange darken-4'
       if (this.$router.currentRoute.path === '/hair') return 'blue darken-3'
+      if (this.$router.currentRoute.path === '/home') return 'blue darken-1'
       return 'blue darken-3'
     }
   }

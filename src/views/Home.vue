@@ -1,26 +1,20 @@
 <template>
   <section class="w100">
-    <glister class="hidden-sm-and-down" />
-    <glister-mobile class="hidden-md-and-up" />
-    <glister-kids class="hidden-sm-and-down" />
-    <glister-kids-mobile class="hidden-md-and-up" />
+    <home-loc class="hidden-sm-and-down" />
+    <home-wash class="hidden-sm-and-down" />
   </section>
 </template>
 
 <script>
-import Glister from '../components/Glister'
-import GlisterMobile from '../components/GlisterMobile'
-import GlisterKids from '../components/GlisterKids'
-import GlisterKidsMobile from '../components/GlisterKidsMobile'
+import HomeLoc from '../components/HomeLoc'
+import HomeWash from '../components/HomeWash'
 export default {
   props: {
     source: String
   },
   components: {
-    Glister,
-    GlisterMobile,
-    GlisterKids,
-    GlisterKidsMobile
+    HomeLoc,
+    HomeWash
   },
   data: () => ({
     drawer: null

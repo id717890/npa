@@ -1,0 +1,169 @@
+.th1 {
+  font-size: 27px;
+  color: #1c953f;
+  line-height: 1em;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.th2 {
+  font-size: 56px;
+  color: #2b527a;
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 1em;
+}
+
+.th3 {
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 700;
+  color: #1c953f;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.th4 {
+  position: relative;
+  font-family: Roboto Condensed, Helvetica Neue, Segoe, Myriad Pro, Arial, Helvetica, sans-serif;
+  line-height: 20px;
+  z-index: 1;
+  text-align: left;
+  font-weight: 400;
+  font-size: 18px;
+  color: #000;
+  line-height: 20px;
+  padding: 0 0 0 42px;
+  margin-bottom: 15px;
+}
+
+.th4::before {
+  content: "";
+  display: block;
+  background: url('../public/img/m13-b.png') no-repeat;
+  width: 28px;
+  height: 30px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.th5 {
+  font-family: Roboto Condensed, Helvetica Neue, Segoe, Myriad Pro, Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  color: #000;
+  line-height: 20px;
+  padding-top: 20px;
+}
+
+.th5 strong {
+  color: #1c953f
+}
+
+.th6 {
+  background: #fff !important;
+  color: #000;
+  cursor: default;
+  position: relative;
+  box-shadow: none;
+  display: inline-block;
+  height: 60px;
+  font-size: 24px;
+  line-height: 30px;
+  padding: 15px;
+  text-align: center;
+  font-weight: 700;
+}
+
+.th7 {
+  text-transform: uppercase;
+  color: #404040;
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 700;
+  padding-top: 10px;
+  margin: 0 -10px;
+  font-family: Roboto Condensed, Helvetica Neue, Segoe, Myriad Pro, Arial, Helvetica, sans-serif;
+}
+
+.hheader1 {
+  text-align: center;
+  position: relative;
+  font-size: 36px;
+  line-height: 46px;
+  font-weight: 400;
+  color: #fff;
+  text-transform: uppercase;
+  padding: 13px;
+  background: #374584;
+}
+
+.bp-bottles {
+  display: inline-block;
+  vertical-align: middle;
+  text-align: center;
+  width: 150px;
+}
+
+.bp-bottle-item {
+  display: inline-block;
+  vertical-align: top;
+  width: 28px;
+  height: 49px;
+  background: url('../public/img/b1.webp');
+  -webkit-transition: all .1s ease-in-out;
+  transition: all .1s ease-in-out;
+}
+
+.bp-bottle-item-glass {
+  display: inline-block;
+  vertical-align: top;
+  width: 67px;
+  height: 100px;
+  background: url('../public/img/b2.webp');
+  -webkit-transition: all .1s ease-in-out;
+  transition: all .1s ease-in-out;
+}
+
+.bp-money,
+.bp-like,
+.bp-leaf {
+  font-size: 27px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #1c953f;
+  position: relative;
+  line-height: 91px;
+  padding: 0 0 0 100px;
+  margin: 15px 0;
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+  visibility: visible;
+  opacity: 1;
+}
+
+.bp-money::before,
+.bp-leaf::before,
+.bp-like::before {
+  background-image: url(https://amwayhome.ancs.ru/img/sprite.png);
+  width: 91px;
+  height: 91px;
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.bp-money::before {
+  background-position: -101px 0;
+}
+
+.bp-like::before {
+  background-position: 0 0;
+}
+
+.bp-leaf::before {
+  background-position: 0 -101px;
+}
