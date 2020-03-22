@@ -367,8 +367,95 @@
           <v-img
             height="430"
             :src="require('../../public/img/bg7-3.webp')"
-            position="center top"
+            position="center -30px"
           >
+            <div class="d-flex flex-row justify-space-around align-center h100">
+              <div class="h-item text-center">
+                <img
+                  style="margin-top: 20px"
+                  :src="require('../../public/img/h-item-luga.webp')"
+                />
+                <div class="mt-8 mb-4">
+                  <v-btn
+                    fab
+                    color="green"
+                    class="mr-4"
+                    dark
+                    @click="orderProduct($event, 5)"
+                  >
+                    <v-icon>mdi-cart-plus</v-icon>
+                  </v-btn>
+                  <v-btn
+                    fab
+                    color="green accent-4"
+                    dark
+                    outlined
+                    @click="openAmway('https://www.amway.ru/p/8193')"
+                  >
+                    <v-icon>mdi-web</v-icon>
+                  </v-btn>
+                </div>
+                <div class="th9 text-left">
+                  Концентрированный освежитель воздуха «Зеленые луга»
+                </div>
+              </div>
+              <div class="h-item text-center">
+                <img
+                  :src="require('../../public/img/h-item-bath-clean.webp')"
+                />
+                <div class="mt-8 mb-4">
+                  <v-btn
+                    fab
+                    color="green"
+                    class="mr-4"
+                    dark
+                    @click="orderProduct($event, 6)"
+                  >
+                    <v-icon>mdi-cart-plus</v-icon>
+                  </v-btn>
+                  <v-btn
+                    fab
+                    color="green accent-4"
+                    dark
+                    outlined
+                    @click="openAmway('https://www.amway.ru/p/117078')"
+                  >
+                    <v-icon>mdi-web</v-icon>
+                  </v-btn>
+                </div>
+                <div class="th9 text-left">
+                  Чистящее средство для ванных комнат
+                </div>
+              </div>
+              <div class="h-item text-center">
+                <img
+                  :src="require('../../public/img/h-item-for-unitaz.webp')"
+                />
+                <div class="mt-8 mb-4">
+                  <v-btn
+                    fab
+                    color="green"
+                    class="mr-4"
+                    dark
+                    @click="orderProduct($event, 7)"
+                  >
+                    <v-icon>mdi-cart-plus</v-icon>
+                  </v-btn>
+                  <v-btn
+                    fab
+                    color="green accent-4"
+                    dark
+                    outlined
+                    @click="openAmway('https://www.amway.ru/p/109864')"
+                  >
+                    <v-icon>mdi-web</v-icon>
+                  </v-btn>
+                </div>
+                <div class="th9 text-left">
+                  Чистящее средство для унитазов
+                </div>
+              </div>
+            </div>
           </v-img>
         </v-col>
         <v-col cols="12" md="6">
@@ -404,7 +491,10 @@ export default {
       { id: 1, text: 'L.O.C.™ Многофункциональное чистящее средство' },
       { id: 2, text: 'L.O.C.™ Жидкость для мытья стекол' },
       { id: 3, text: 'Моющее средство для кухни' },
-      { id: 4, text: 'Универсальное дезинфицирующее чистящее средство' }
+      { id: 4, text: 'Универсальное дезинфицирующее чистящее средство' },
+      { id: 5, text: 'Концентрированный освежитель воздуха «Зеленые луга»' },
+      { id: 6, text: 'Чистящее средство для ванных комнат' },
+      { id: 7, text: 'Чистящее средство для унитазов' }
     ]
   }),
   methods: {
