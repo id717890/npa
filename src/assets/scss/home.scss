@@ -87,6 +87,41 @@
   font-family: Roboto Condensed, Helvetica Neue, Segoe, Myriad Pro, Arial, Helvetica, sans-serif;
 }
 
+.th8 {
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #000;
+  font-family: Roboto Condensed, Helvetica Neue, Segoe, Myriad Pro, Arial, Helvetica, sans-serif;
+}
+
+.th8 strong {
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: 700;
+}
+
+.th9 {
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 700;
+  color: #000;
+  width: 120px;
+  position: relative
+}
+
+.h-item:hover .th9,
+.th9:hover {
+  color: #319352;
+}
+
+.h-item {
+  cursor: pointer;
+}
+
+
+
 .hheader1 {
   text-align: center;
   position: relative;
@@ -146,7 +181,7 @@
 .bp-money::before,
 .bp-leaf::before,
 .bp-like::before {
-  background-image: url(https://amwayhome.ancs.ru/img/sprite.png);
+  background-image: url('../public/img/sprite.webp');
   width: 91px;
   height: 91px;
   content: "";

@@ -98,6 +98,23 @@
             <strong>БЕЗОПАСНО</strong> <br />
             Безопасно для большинства бытовых поверхностей
           </div>
+          <div
+            class="d-flex flex-row flex-wrap justify-space-between px-10 w100"
+          >
+            <v-btn
+              large
+              color="teal"
+              outlined
+              @click="openUrl('https://www.amway.ru/p/0001')"
+            >
+              <v-icon class="mr-3">mdi-web</v-icon>
+              Подробнее
+            </v-btn>
+            <v-btn dark large color="success" @click="orderProduct($event, 1)">
+              <v-icon class="mr-3">mdi-basket</v-icon>
+              Заказать
+            </v-btn>
+          </div>
         </v-col>
         <v-col md="6" cols="12" class="pl-12">
           <div>
@@ -209,6 +226,23 @@
             Эффективно обезжиривает стеклянные поверхности, удаляя следы от
             пальцев
           </div>
+          <div
+            class="d-flex flex-row flex-wrap justify-space-between px-10 w100"
+          >
+            <v-btn
+              large
+              color="teal"
+              outlined
+              @click="openUrl('https://www.amway.ru/p/117080')"
+            >
+              <v-icon class="mr-3">mdi-web</v-icon>
+              Подробнее
+            </v-btn>
+            <v-btn dark large color="success" @click="orderProduct($event, 2)">
+              <v-icon class="mr-3">mdi-basket</v-icon>
+              Заказать
+            </v-btn>
+          </div>
         </v-col>
         <v-col md="6" cols="12" class="pl-12">
           <div>
@@ -241,22 +275,149 @@
         </v-col>
       </v-row>
     </v-col>
-    <!-- СРЕДСТВА ДЛЯ СТИРКИ -->
     <v-col cols="12">
-      <div class="hheader1">СРЕДСТВА ДЛЯ СТИРКИ</div>
-    </v-col>
-    <v-col cols="12">
-      <v-img
-        height="400"
-        :src="require('../../public/img/bg3.webp')"
-        position="center -30px"
-      ></v-img>
+      <v-row no-gutters>
+        <v-col cols="12" md="6">
+          <v-img
+            height="430"
+            :src="require('../../public/img/bg7-1.webp')"
+            position="center top"
+          >
+            <div class="pt-12 pl-12">
+              <div class="th8">
+                <strong>КУХНЯ</strong>
+                <br />
+                САМОЕ ЛЮБИМОе
+                <br />
+                МЕСТО В ДОМЕ
+              </div>
+            </div>
+          </v-img>
+        </v-col>
+        <v-col cols="12" md="6">
+          <v-img
+            height="430"
+            :src="require('../../public/img/bg7-2.webp')"
+            position="center -30px"
+          >
+            <div class="d-flex flex-row justify-space-around align-center h100">
+              <div class="h-item text-center">
+                <img
+                  :src="require('../../public/img/h-item-wash-kitchen.webp')"
+                />
+                <div class="mt-8 mb-4">
+                  <v-btn
+                    fab
+                    color="green"
+                    class="mr-4"
+                    dark
+                    @click="orderProduct($event, 3)"
+                  >
+                    <v-icon>mdi-cart-plus</v-icon>
+                  </v-btn>
+                  <v-btn
+                    fab
+                    color="green accent-4"
+                    dark
+                    outlined
+                    @click="openAmway('https://www.amway.ru/p/117079')"
+                  >
+                    <v-icon>mdi-web</v-icon>
+                  </v-btn>
+                </div>
+                <div class="th9 text-left">
+                  Моющее средство для кухни
+                </div>
+              </div>
+              <div class="h-item text-center">
+                <img
+                  style="margin-top: 30px"
+                  :src="require('../../public/img/h-item-dezinf.webp')"
+                />
+                <div class="mt-8 mb-4">
+                  <v-btn
+                    fab
+                    color="green"
+                    class="mr-4"
+                    dark
+                    @click="orderProduct($event, 4)"
+                  >
+                    <v-icon>mdi-cart-plus</v-icon>
+                  </v-btn>
+                  <v-btn
+                    fab
+                    color="green accent-4"
+                    dark
+                    outlined
+                    @click="openAmway('https://www.amway.ru/p/284377')"
+                  >
+                    <v-icon>mdi-web</v-icon>
+                  </v-btn>
+                </div>
+                <div class="th9 text-left">
+                  Универсальное дезинфицирующее чистящее средство
+                </div>
+              </div>
+            </div>
+          </v-img>
+        </v-col>
+      </v-row>
+      <v-row no-gutters>
+        <v-col cols="12" md="6">
+          <v-img
+            height="430"
+            :src="require('../../public/img/bg7-3.webp')"
+            position="center top"
+          >
+          </v-img>
+        </v-col>
+        <v-col cols="12" md="6">
+          <v-img
+            height="430"
+            :src="require('../../public/img/bg7-4.webp')"
+            position="center top"
+          >
+            <div class="pt-12 pl-12">
+              <div class="th8">
+                <strong>ВАННАЯ</strong>
+                <br />
+                <strong>И ТУАЛЕТ</strong>
+                <br />
+                МЕСТО, ГДЕ ЖИВЕТ
+                <br />
+                ЧИСТОТА
+              </div>
+            </div>
+          </v-img>
+        </v-col>
+      </v-row>
     </v-col>
   </v-row>
 </template>
 
 <script>
-export default {}
+import CallDialogMixin from '../mixins/CallDialogMixin'
+export default {
+  mixins: [CallDialogMixin],
+  data: () => ({
+    products: [
+      { id: 1, text: 'L.O.C.™ Многофункциональное чистящее средство' },
+      { id: 2, text: 'L.O.C.™ Жидкость для мытья стекол' },
+      { id: 3, text: 'Моющее средство для кухни' },
+      { id: 4, text: 'Универсальное дезинфицирующее чистящее средство' }
+    ]
+  }),
+  methods: {
+    openUrl(url) {
+      this.openAmway(url)
+    },
+    orderProduct(e, product) {
+      e.preventDefault()
+      const find = this.products.find(x => x.id === product)
+      if (find) this.showCallDialog(find.text)
+    }
+  }
+}
 </script>
 
 <style></style>
