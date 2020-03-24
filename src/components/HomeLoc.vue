@@ -66,6 +66,9 @@
       </div>
     </v-col>
     <v-col md="1" cols="12"></v-col>
+    <v-col cols="12">
+      <favorite />
+    </v-col>
     <!-- СРЕДСТВА ДЛЯ УБОРКИ -->
     <v-col cols="12">
       <div class="hheader1">СРЕДСТВА ДЛЯ УБОРКИ</div>

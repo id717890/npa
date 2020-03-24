@@ -1,7 +1,7 @@
 <template>
   <v-row no-gutters>
     <v-col cols="12">
-      <v-img :src="require('../../public/img/bg15_mobile.jpg')">
+      <v-img :src="require('../../public/img/bg15_mobile.webp')">
         <div class="d-flex flex-row h100 w100 text-left">
           <div
             class="justify-center d-flex flex-column  align-center px-12"
@@ -23,7 +23,7 @@
               data-aos-duration="2000"
               data-aos-delay="500"
             >
-              <img :src="require('../../public/img/logo-glister-kids.png')" />
+              <img :src="require('../../public/img/logo-glister-kids.webp')" />
             </div>
             <div
               class="t5 text-white text-justify"
@@ -50,7 +50,7 @@
     </v-col>
     <v-col cols="12" class="text-center">
       <img
-        :src="require('../../public/img/m15-2.jpg')"
+        :src="require('../../public/img/m15-2.webp')"
         data-aos="flip-right"
         data-aos-duration="2000"
       />
@@ -62,7 +62,7 @@
     </v-col>
     <v-col cols="12" class="text-center pt-6">
       <img
-        :src="require('../../public/img/m15-3.jpg')"
+        :src="require('../../public/img/m15-3.webp')"
         data-aos="flip-down"
         data-aos-duration="2000"
       />

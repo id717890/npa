@@ -8,6 +8,8 @@ import VueJsModal from 'vue-js-modal'
 import VueAnalytics from 'vue-analytics'
 import 'aos/dist/aos.css'
 import AOS from 'aos'
+import Favorite from './components/Favorite'
+
 AOS.init()
 Vue.use(VueJsModal, { dynamic: true })
 Vue.config.productionTip = false
@@ -15,6 +17,8 @@ Vue.config.productionTip = false
 Vue.use(VueAnalytics, {
   id: 'UA-62478858-9'
 })
+
+Vue.component('favorite', Favorite)
 
 import AxiosConfig from './api/http-config'
 Vue.$http = AxiosConfig

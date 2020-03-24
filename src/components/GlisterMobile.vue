@@ -1,7 +1,7 @@
 <template>
   <v-row no-gutters>
     <v-col cols="12">
-      <v-img :src="require('../../public/img/bg10_mobile.jpg')">
+      <v-img :src="require('../../public/img/bg10_mobile.webp')">
         <div class="d-flex flex-row h100 w100 text-center">
           <div
             class="justify-center d-flex flex-column  align-center px-5"
@@ -18,7 +18,7 @@
               за&nbsp;зубами
             </div>
             <div class="py-4 text-center">
-              <img :src="require('../../public/img/logo-glister.png')" />
+              <img :src="require('../../public/img/logo-glister.webp')" />
             </div>
             <div
               class="t2 text-white px-6 pb-6 text-justify"
@@ -35,7 +35,7 @@
     <v-col cols="12">
       <v-row no-gutters class="py-5">
         <v-col cols="12 text-center">
-          <img :src="require('../../public/img/logo-50-years.jpg')" alt="" />
+          <img :src="require('../../public/img/logo-50-years.webp')" alt="" />
         </v-col>
         <v-col cols="12 text-center pt-5">
           <span style="font-weight: 500">Glister™ дарит улыбку людям</span>
@@ -151,7 +151,7 @@
             cols="12"
             class="d-flex flex-column align-start justify-center px-12"
           >
-            <img :src="require('../../public/img/logo-glister-sm.png')" />
+            <img :src="require('../../public/img/logo-glister-sm.webp')" />
             <div class="glister-item-header mt-0 mb-7">
               Универсальные ЗУБНЫЕ ЩЕТКИ
             </div>
@@ -211,7 +211,7 @@
             cols="12"
             class="d-flex flex-column align-start justify-center order-lg-1 px-12"
           >
-            <img :src="require('../../public/img/logo-glister-sm.png')" />
+            <img :src="require('../../public/img/logo-glister-sm.webp')" />
             <div class="glister-item-header mt-0 mb-7">
               МНОГОФУНКЦИОНАЛЬНАЯ ЗУБНАЯ ПАСТА
             </div>
@@ -273,7 +273,7 @@
             cols="12"
             class="d-flex flex-column align-start justify-center px-12"
           >
-            <img :src="require('../../public/img/logo-glister-sm.png')" />
+            <img :src="require('../../public/img/logo-glister-sm.webp')" />
             <div class="glister-item-header mt-0 mb-7">
               КОНЦЕНТРИРОВАННАЯ ЖИДКОСТЬ ДЛЯ ПОЛОСКАНИЯ ПОЛОСТИ РТА
             </div>
@@ -316,7 +316,7 @@
         <v-row no-gutters>
           <v-col cols="12" class="text-center order-lg-2">
             <img
-              :src="require('../../public/img/g-item-sprey.jpg')"
+              :src="require('../../public/img/g-item-sprey.webp')"
               alt=""
               data-aos="flip-right"
               data-aos-duration="800"
@@ -327,7 +327,7 @@
             cols="12"
             class="d-flex flex-column align-start justify-center order-lg-1 px-12"
           >
-            <img :src="require('../../public/img/logo-glister-sm.png')" />
+            <img :src="require('../../public/img/logo-glister-sm.webp')" />
             <div class="glister-item-header mt-0 mb-7">
               СПРЕЙ-ОСВЕЖИТЕЛЬ ПОЛОСТИ РТА С ЗАПАХОМ МЯТЫ
             </div>
@@ -374,7 +374,7 @@
         <v-row no-gutters>
           <v-col cols="12" class="text-center">
             <img
-              :src="require('../../public/img/g-item-nit.jpg')"
+              :src="require('../../public/img/g-item-nit.webp')"
               alt=""
               data-aos="flip-right"
               data-aos-duration="800"
@@ -385,7 +385,7 @@
             cols="12"
             class="d-flex flex-column align-start justify-center px-12"
           >
-            <img :src="require('../../public/img/logo-glister-sm.png')" />
+            <img :src="require('../../public/img/logo-glister-sm.webp')" />
             <div class="glister-item-header mt-0 mb-7">
               ЗУБНАЯ НИТЬ
             </div>
