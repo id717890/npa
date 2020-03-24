@@ -15,7 +15,8 @@ Vue.use(VueJsModal, { dynamic: true })
 Vue.config.productionTip = false
 
 Vue.use(VueAnalytics, {
-  id: 'UA-62478858-9'
+  id: 'UA-62478858-9',
+  router
 })
 
 Vue.component('favorite', Favorite)
