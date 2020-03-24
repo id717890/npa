@@ -13,6 +13,7 @@
                   :autofocus="true"
                   filled
                   v-model="contact"
+                  placeholder="Здесь вы можете написать, что Вам нужно и оставить свои контакты"
                   :rules="contactRules"
                   :counter="100"
                   required
