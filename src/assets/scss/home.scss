@@ -140,6 +140,45 @@
   font-family: Roboto Condensed, Helvetica Neue, Segoe, Myriad Pro, Arial, Helvetica, sans-serif;
 }
 
+.th13 {
+  background: #6fbc43;
+  font-size: 22px;
+  line-height: 30px;
+  padding: 15px 30px;
+  font-weight: 700;
+  color: #fff;
+}
+
+.th14 {
+  display: flex;
+  flex: 1 1 auto;
+  background: #fff url('../public/img/bg8.webp') 100% 100% repeat-x;
+}
+
+.th15 {
+  background: #d6b038;
+  font-family: Roboto Condensed, Helvetica Neue, Segoe, Myriad Pro, Arial, Helvetica, sans-serif;
+  font-size: 22px;
+  line-height: 30px;
+  padding: 15px 30px;
+  font-weight: 700;
+  color: #fff;
+}
+
+.th16 {
+  display: flex;
+  flex: 1 1 auto;
+  background: #eec43e;
+}
+
+.th17 {
+  text-transform: uppercase;
+  color: #f8e5ab;
+  font-size: 18px;
+  line-height: 20px;
+  font-weight: 700;
+  padding-top: 10px;
+}
 
 
 .h-item:hover .th9,
@@ -188,6 +227,16 @@
   width: 67px;
   height: 100px;
   background: url('../public/img/b2.webp');
+  -webkit-transition: all .1s ease-in-out;
+  transition: all .1s ease-in-out;
+}
+
+.bp-bottle-item-dish {
+  display: inline-block;
+  vertical-align: top;
+  width: 36px;
+  height: 62px;
+  background: url(https://amwayhome.ancs.ru/img/b3.png);
   -webkit-transition: all .1s ease-in-out;
   transition: all .1s ease-in-out;
 }
