@@ -367,12 +367,12 @@
           <v-img
             height="430"
             :src="require('../../public/img/bg7-3.webp')"
-            position="center -30px"
+            position="center bottom"
           >
             <div class="d-flex flex-row justify-space-around align-center h100">
               <div class="h-item text-center">
                 <img
-                  style="margin-top: 20px"
+                  style="margin-top: 70px;"
                   :src="require('../../public/img/h-item-luga.webp')"
                 />
                 <div class="mt-8 mb-4">
@@ -396,11 +396,12 @@
                   </v-btn>
                 </div>
                 <div class="th9 text-left">
-                  Концентрированный освежитель воздуха «Зеленые луга»
+                  Освежитель воздуха «Зеленые луга»
                 </div>
               </div>
               <div class="h-item text-center">
                 <img
+                  style="margin-top: 70px;"
                   :src="require('../../public/img/h-item-bath-clean.webp')"
                 />
                 <div class="mt-8 mb-4">
@@ -429,6 +430,7 @@
               </div>
               <div class="h-item text-center">
                 <img
+                  style="margin-top: 70px;"
                   :src="require('../../public/img/h-item-for-unitaz.webp')"
                 />
                 <div class="mt-8 mb-4">

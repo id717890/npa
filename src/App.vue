@@ -92,14 +92,14 @@
             alt=""
           />
         </v-btn>
-        <v-btn text class="" to="/skin">
+        <!-- <v-btn text class="" to="/skin">
           <img :src="require('../public/img/n1.png')" class="mr-2" alt="" />
           Уход за кожей
         </v-btn>
         <v-btn text class="" to="/hair">
           <img :src="require('../public/img/n2.png')" class="mr-2" alt="" />
           Уход за волосами
-        </v-btn>
+        </v-btn> -->
         <v-btn text target="_blank" href="tel:+79527247500">
           <v-icon color="red accent-4">mdi-phone-in-talk</v-icon>
         </v-btn>
