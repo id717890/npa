@@ -5,7 +5,7 @@
     </v-col>
     <v-col
       cols="12"
-      class="d-flex flex-row justify-space-around  text-center py-10"
+      class="d-flex flex-row flex-wrap justify-space-around  text-center py-10"
     >
       <div class="fav-product" v-for="(fav, index) in favs" :key="index">
         <img

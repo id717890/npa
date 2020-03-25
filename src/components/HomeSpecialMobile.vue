@@ -6,7 +6,6 @@
     </v-col>
     <v-col cols="12">
       <v-img
-        height="450"
         class="mb-10"
         :src="require('../../public/img/bg9.webp')"
         position="center -60px"
@@ -14,8 +13,7 @@
         <v-row no-gutters>
           <v-col
             cols="12"
-            md="4"
-            class="d-flex flex-row align-center justify-center"
+            class="d-flex flex-row align-center justify-center pa-10"
           >
             <div class="bp-label-icon">
               <svg
@@ -87,9 +85,12 @@
               СЛОЖНЫХ ЗАДАЧ
             </div>
           </v-col>
-          <v-col cols="12" md="3" class="d-flex">
+          <v-col cols="12" class="d-flex">
             <div class="h-item text-center  ">
               <img
+                data-aos="fade-down"
+                data-aos-duration="700"
+                data-aos-delay="450"
                 class="mt-12"
                 :src="require('../../public/img/h-item-0014.webp')"
               />
@@ -113,14 +114,15 @@
                   <v-icon>mdi-web</v-icon>
                 </v-btn>
               </div>
-              <div class="th9 text-left" style="width: auto">
+              <div class="th9 text-center" style="width: auto">
                 Чистящее средство-гель для духовых шкафов
               </div>
             </div>
-          </v-col>
-          <v-col cols="12" md="4" class="d-flex">
             <div class="h-item text-center">
               <img
+                data-aos="fade-down"
+                data-aos-duration="700"
+                data-aos-delay="850"
                 class="mt-12"
                 :src="require('../../public/img/h-item-117074.webp')"
               />
@@ -144,7 +146,7 @@
                   <v-icon>mdi-web</v-icon>
                 </v-btn>
               </div>
-              <div class="th9 text-left" style="width: auto">
+              <div class="th9 text-center" style="width: auto">
                 Концентрированное чистящее средство
               </div>
             </div>

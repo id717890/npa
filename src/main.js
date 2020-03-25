@@ -9,6 +9,7 @@ import VueAnalytics from 'vue-analytics'
 import 'aos/dist/aos.css'
 import AOS from 'aos'
 import Favorite from './components/Favorite'
+import FavoriteMobile from './components/FavoriteMobile'
 
 AOS.init()
 Vue.use(VueJsModal, { dynamic: true })
@@ -20,6 +21,7 @@ Vue.use(VueAnalytics, {
 })
 
 Vue.component('favorite', Favorite)
+Vue.component('favorite-mobile', FavoriteMobile)
 
 import AxiosConfig from './api/http-config'
 Vue.$http = AxiosConfig

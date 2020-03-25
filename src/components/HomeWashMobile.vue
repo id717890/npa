@@ -11,7 +11,7 @@
         position="center -30px"
       ></v-img>
     </v-col>
-    <v-col md="10" offset-md="2" cols="12">
+    <v-col cols="12">
       <div class="th10 pl-12">
         <strong>
           Представляем вашему вниманию
@@ -22,46 +22,90 @@
     </v-col>
     <v-col cols="12">
       <v-row no-gutters>
-        <v-col
-          cols="12"
-          md="2"
-          offset-md="2"
-          class="d-flex flex-column align-center"
-        >
-          <img :src="require('../../public/img/advantage1.webp')" alt="" />
-          <div class="th11 text-center">
+        <v-col cols="12" class="d-flex flex-column align-center mb-6">
+          <img
+            :src="require('../../public/img/advantage1.webp')"
+            alt=""
+            data-aos="fade"
+            data-aos-duration="500"
+            data-aos-delay="200"
+          />
+          <div
+            class="th11 text-center"
+            data-aos="fade"
+            data-aos-duration="500"
+            data-aos-delay="300"
+          >
             Эффективны даже в холодной воде
           </div>
         </v-col>
-        <v-col cols="12" md="2" class="d-flex flex-column align-center">
-          <img :src="require('../../public/img/advantage2.webp')" alt="" />
-          <div class="th11 text-center">
+        <v-col cols="12" class="d-flex flex-column align-center mb-6">
+          <img
+            :src="require('../../public/img/advantage2.webp')"
+            alt=""
+            data-aos="fade"
+            data-aos-duration="500"
+            data-aos-delay="350"
+          />
+          <div
+            class="th11 text-center"
+            data-aos="fade"
+            data-aos-duration="500"
+            data-aos-delay="450"
+          >
             Бережно отстирывают, сохраняя цвет и структуру тканей
           </div>
         </v-col>
-        <v-col cols="12" md="2" class="d-flex flex-column align-center">
-          <img :src="require('../../public/img/advantage3.webp')" alt="" />
-          <div class="th11 text-center">
+        <v-col cols="12" class="d-flex flex-column align-center mb-6">
+          <img
+            :src="require('../../public/img/advantage3.webp')"
+            alt=""
+            data-aos="fade"
+            data-aos-duration="500"
+            data-aos-delay="500"
+          />
+          <div
+            class="th11 text-center"
+            data-aos="fade"
+            data-aos-duration="500"
+            data-aos-delay="600"
+          >
             Быстро растворяются и легко выполаскиваются
           </div>
         </v-col>
-        <v-col cols="12" md="2" class="d-flex flex-column align-center">
-          <img :src="require('../../public/img/advantage4.webp')" alt="" />
-          <div class="th11 text-center">
+        <v-col cols="12" class="d-flex flex-column align-center mb-6">
+          <img
+            :src="require('../../public/img/advantage4.webp')"
+            alt=""
+            data-aos="fade"
+            data-aos-duration="500"
+            data-aos-delay="650"
+          />
+          <div
+            class="th11 text-center"
+            data-aos="fade"
+            data-aos-duration="500"
+            data-aos-delay="750"
+          >
             Экономят ваше время и деньги
           </div>
         </v-col>
       </v-row>
     </v-col>
     <v-col
-      md="6"
       cols="12"
       v-for="product in products"
       :key="product.id"
       class="px-12"
     >
-      <div class="d-flex flex-column align-center  px-12 py-12 h100">
-        <img :src="product.img" alt="" style="max-height: 320px;" />
+      <div class="d-flex flex-column align-center py-12 h100">
+        <img
+          :src="product.img"
+          alt=""
+          style="max-height: 320px;"
+          data-aos="zoom-in"
+          data-aos-duration="600"
+        />
         <div v-html="product.name" class="th12 align-self-start"></div>
         <div>
           <div class="th4" v-for="(plus, index) in product.plus" :key="index">
@@ -70,14 +114,21 @@
           </div>
         </div>
         <div
-          class="d-flex justify-self-end flex-row flex-wrap justify-space-between px-10 w100"
+          class="d-flex justify-self-end flex-row flex-wrap justify-space-between  w100"
         >
-          <v-btn large color="teal" outlined @click="openUrl(product.url)">
+          <v-btn
+            large
+            color="teal"
+            outlined
+            @click="openUrl(product.url)"
+            class="w100 mb-4"
+          >
             <v-icon class="mr-3">mdi-web</v-icon>
             Подробнее
           </v-btn>
           <v-btn
             dark
+            class="w100 "
             large
             color="success"
             @click="orderProduct($event, product.id)"
