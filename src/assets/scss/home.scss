@@ -302,3 +302,18 @@
 .bp-leaf::before {
   background-position: 0 -101px;
 }
+
+.btn-favorite1,
+.btn-favorite2 {
+  position: absolute !important;
+}
+
+.btn-favorite1 {
+  left: -40px;
+  top: 70px;
+}
+
+.btn-favorite2 {
+  right: -40px;
+  top: 70px;
+}

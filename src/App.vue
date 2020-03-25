@@ -16,15 +16,15 @@
             <img :src="require('../public/img/n3.png')" alt="" />
           </v-list-item-action>
           <v-list-item-content>
-            <v-list-item-title>Уход за зубами</v-list-item-title>
+            <v-list-item-title>УХОД ЗА ЗУБАМИ</v-list-item-title>
           </v-list-item-content>
         </v-list-item>
         <v-list-item link to="/home">
           <v-list-item-action>
-            <img :src="require('../public/img/logo-home.webp')" alt="" />
+            <v-icon color="blue">mdi-home</v-icon>
           </v-list-item-action>
           <v-list-item-content>
-            <!-- <v-list-item-title> за зубами</v-list-item-title> -->
+            <v-list-item-title>ДОМ</v-list-item-title>
           </v-list-item-content>
         </v-list-item>
         <v-list-item link target="_blank" href="tel:+79527247500">
@@ -102,11 +102,13 @@
           Уход за зубами
         </v-btn>
         <v-btn text class="" to="/home">
-          <img
+          <!-- <img
             :src="require('../public/img/logo-home.webp')"
             class="mr-2"
             alt=""
-          />
+          /> -->
+          <v-icon class="mr-2">mdi-home</v-icon>
+          ДОМ
         </v-btn>
         <!-- <v-btn text class="" to="/skin">
           <img :src="require('../public/img/n1.png')" class="mr-2" alt="" />

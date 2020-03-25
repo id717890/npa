@@ -185,7 +185,7 @@ export default {
         id: 2,
         name: 'SA8™Premium <br/>Порошок стиральный концентрированный',
         text: 'SA8™Premium Порошок стиральный концентрированный',
-        url: 'https://www.amway.ru/p/112532',
+        url: 'https://www.amway.ru/p/109849',
         img: 'img/h-item-109849.webp',
         plus: [
           {

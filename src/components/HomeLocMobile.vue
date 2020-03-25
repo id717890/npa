@@ -10,9 +10,11 @@
             cols="12"
             class="d-flex flex-column justify-end pa-12"
           >
-            <div class="th1">С Amway home™</div>
+            <div class="th1 mt-6 text-center pb-6">С Amway home™</div>
             <div class="th2">экономьте</div>
-            <div class="th1">деньги, время и силы!</div>
+            <div class="th1 text-center py-6">деньги, время</div>
+            <div class="th1 text-center pb-6">и</div>
+            <div class="th1 text-center ">силы</div>
           </v-col>
           <v-col cols="12" class="pa-12">
             <div class="h100 d-flex flex-column justify-center align-start">
