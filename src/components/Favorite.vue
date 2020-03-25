@@ -9,12 +9,23 @@
     >
       <div class="fav-product" v-for="(fav, index) in favs" :key="index">
         <img
+          data-aos="zoom-in"
+          data-aos-duration="800"
+          :data-aos-delay="index * 300"
           class="mb-4"
           style="max-height: 220px"
           :src="fav.img"
           :alt="fav.name"
         />
-        <div class="th9" style="width: 200px">{{ fav.name }}</div>
+        <div
+          class="th9"
+          style="width: 200px"
+          data-aos="zoom-out"
+          data-aos-duration="800"
+          :data-aos-delay="index * 400"
+        >
+          {{ fav.name }}
+        </div>
         <div class="mt-4">
           <v-alert tile dense dark :color="fav.color">
             <v-icon>mdi-cash</v-icon>

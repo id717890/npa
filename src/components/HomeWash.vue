@@ -28,26 +28,70 @@
           offset-md="2"
           class="d-flex flex-column align-center"
         >
-          <img :src="require('../../public/img/advantage1.webp')" alt="" />
-          <div class="th11 text-center">
+          <img
+            :src="require('../../public/img/advantage1.webp')"
+            alt=""
+            data-aos="fade"
+            data-aos-duration="500"
+            data-aos-delay="200"
+          />
+          <div
+            class="th11 text-center"
+            data-aos="fade"
+            data-aos-duration="500"
+            data-aos-delay="300"
+          >
             Эффективны даже в холодной воде
           </div>
         </v-col>
         <v-col cols="12" md="2" class="d-flex flex-column align-center">
-          <img :src="require('../../public/img/advantage2.webp')" alt="" />
-          <div class="th11 text-center">
+          <img
+            :src="require('../../public/img/advantage2.webp')"
+            alt=""
+            data-aos="fade"
+            data-aos-duration="500"
+            data-aos-delay="350"
+          />
+          <div
+            class="th11 text-center"
+            data-aos="fade"
+            data-aos-duration="500"
+            data-aos-delay="450"
+          >
             Бережно отстирывают, сохраняя цвет и структуру тканей
           </div>
         </v-col>
         <v-col cols="12" md="2" class="d-flex flex-column align-center">
-          <img :src="require('../../public/img/advantage3.webp')" alt="" />
-          <div class="th11 text-center">
+          <img
+            :src="require('../../public/img/advantage3.webp')"
+            alt=""
+            data-aos="fade"
+            data-aos-duration="500"
+            data-aos-delay="500"
+          />
+          <div
+            class="th11 text-center"
+            data-aos="fade"
+            data-aos-duration="500"
+            data-aos-delay="600"
+          >
             Быстро растворяются и легко выполаскиваются
           </div>
         </v-col>
         <v-col cols="12" md="2" class="d-flex flex-column align-center">
-          <img :src="require('../../public/img/advantage4.webp')" alt="" />
-          <div class="th11 text-center">
+          <img
+            :src="require('../../public/img/advantage4.webp')"
+            alt=""
+            data-aos="fade"
+            data-aos-duration="500"
+            data-aos-delay="650"
+          />
+          <div
+            class="th11 text-center"
+            data-aos="fade"
+            data-aos-duration="500"
+            data-aos-delay="750"
+          >
             Экономят ваше время и деньги
           </div>
         </v-col>
@@ -61,7 +105,13 @@
       class="px-12"
     >
       <div class="d-flex flex-column align-center  px-12 py-12 h100">
-        <img :src="product.img" alt="" style="max-height: 320px;" />
+        <img
+          :src="product.img"
+          alt=""
+          style="max-height: 320px;"
+          data-aos="zoom-in"
+          data-aos-duration="600"
+        />
         <div v-html="product.name" class="th12 align-self-start"></div>
         <div>
           <div class="th4" v-for="(plus, index) in product.plus" :key="index">

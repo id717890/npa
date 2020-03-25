@@ -157,9 +157,25 @@
       <v-col cols="12">
         <v-img :src="require('../public/img/bg1.webp')">
           <div class="pa-12 my-12 d-flex align-center justify-center">
-            <v-icon class="display-4 text-white">mdi-truck-delivery</v-icon>
-            <div class="t6 mx-5 text-white">Бесплатная доставка по городу</div>
-            <v-icon class="display-4 text-white hidden-sm-and-down"
+            <v-icon
+              class="display-4 text-white"
+              data-aos="fade-right"
+              data-aos-duration="700"
+              >mdi-truck-delivery</v-icon
+            >
+            <div
+              class="t6 mx-5 text-white"
+              data-aos="fade-right"
+              data-aos-duration="700"
+              data-aos-delay="300"
+            >
+              Бесплатная доставка по городу
+            </div>
+            <v-icon
+              class="display-4 text-white hidden-sm-and-down"
+              data-aos="fade-right"
+              data-aos-duration="700"
+              data-aos-delay="600"
               >mdi-truck-delivery</v-icon
             >
           </div>

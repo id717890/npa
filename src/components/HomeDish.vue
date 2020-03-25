@@ -12,7 +12,7 @@
             :src="require('../../public/img/bg8-1.webp')"
             position="center top"
           >
-            <div class="pt-12 pl-12">
+            <div class="pt-12 pl-12" data-aos="fade-up" data-aos-duration="700">
               <div class="th8">
                 <strong>МАШИННАЯ</strong>
                 <br />
@@ -27,7 +27,7 @@
             :src="require('../../public/img/bg8-2.webp')"
             position="center top"
           >
-            <div class="pt-12 pl-12">
+            <div class="pt-12 pl-12" data-aos="fade-up" data-aos-duration="700">
               <div class="th8">
                 <strong>РУЧНАЯ</strong>
                 <br />
@@ -49,7 +49,11 @@
                 md="6"
                 class="d-flex align-center justify-center"
               >
-                <img :src="require('../../public/img/h-item-109867.webp')" />
+                <img
+                  :src="require('../../public/img/h-item-109867.webp')"
+                  data-aos="zoom-out"
+                  data-aos-duration="700"
+                />
               </v-col>
               <v-col
                 cols="12"
@@ -109,40 +113,21 @@
           <div class="th16">
             <v-row no-gutters class="pa-12">
               <v-col cols="12" md="6" class="text-center">
-                <img :src="require('../../public/img/h-item-110488.webp')" />
+                <img
+                  :src="require('../../public/img/h-item-110488.webp')"
+                  data-aos="zoom-out"
+                  data-aos-duration="700"
+                  data-aos-delay="400"
+                />
                 <div class="bp-bottles" style="width: 120px">
                   <div
+                    v-for="i in 8"
+                    :key="i"
+                    data-aos="zoom-in"
+                    data-aos-duration="700"
+                    :data-aos-delay="i * 200"
                     class="bp-bottle-item-dish js_bottleItem bp-bottle-item-visible"
                     id="unique_id_50"
-                  ></div>
-                  <div
-                    class="bp-bottle-item-dish js_bottleItem bp-bottle-item-visible"
-                    id="unique_id_51"
-                  ></div>
-                  <br />
-                  <div
-                    class="bp-bottle-item-dish js_bottleItem bp-bottle-item-visible"
-                    id="unique_id_52"
-                  ></div>
-                  <div
-                    class="bp-bottle-item-dish js_bottleItem bp-bottle-item-visible"
-                    id="unique_id_53"
-                  ></div>
-                  <div
-                    class="bp-bottle-item-dish js_bottleItem bp-bottle-item-visible"
-                    id="unique_id_54"
-                  ></div>
-                  <div
-                    class="bp-bottle-item-dish js_bottleItem bp-bottle-item-visible"
-                    id="unique_id_55"
-                  ></div>
-                  <div
-                    class="bp-bottle-item-dish js_bottleItem bp-bottle-item-visible"
-                    id="unique_id_56"
-                  ></div>
-                  <div
-                    class="bp-bottle-item-dish js_bottleItem bp-bottle-item-visible"
-                    id="unique_id_57"
                   ></div>
                   <div class="th17">8 флаконов готовой жидкости</div>
                 </div>

@@ -90,6 +90,9 @@
           <v-col cols="12" md="3" class="d-flex">
             <div class="h-item text-center  ">
               <img
+                data-aos="fade-down"
+                data-aos-duration="700"
+                data-aos-delay="450"
                 class="mt-12"
                 :src="require('../../public/img/h-item-0014.webp')"
               />
@@ -121,6 +124,9 @@
           <v-col cols="12" md="4" class="d-flex">
             <div class="h-item text-center">
               <img
+                data-aos="fade-down"
+                data-aos-duration="700"
+                data-aos-delay="850"
                 class="mt-12"
                 :src="require('../../public/img/h-item-117074.webp')"
               />
