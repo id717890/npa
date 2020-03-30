@@ -1,7 +1,13 @@
 <template>
   <v-app id="inspire">
     <modals-container />
-    <v-navigation-drawer v-model="drawer" app temporary>
+    <v-navigation-drawer
+      v-model="drawer"
+      app
+      temporary
+      :color="layoutColor()"
+      dark
+    >
       <v-list dense>
         <!-- <v-list-item link @click="scrollToTop">
           <v-list-item-action>
@@ -110,11 +116,11 @@
           <v-icon class="mr-2">mdi-home</v-icon>
           ДОМ
         </v-btn>
-        <!-- <v-btn text class="" to="/skin">
+        <v-btn text class="" to="/body">
           <img :src="require('../public/img/n1.png')" class="mr-2" alt="" />
-          Уход за кожей
+          Уход за телом
         </v-btn>
-        <v-btn text class="" to="/hair">
+        <!-- <v-btn text class="" to="/hair">
           <img :src="require('../public/img/n2.png')" class="mr-2" alt="" />
           Уход за волосами
         </v-btn> -->
@@ -248,7 +254,9 @@
               alt=""
             />
           </v-btn>
-          <span class="white--text mx-5">&copy; 2019 Amway в Урае</span>
+          <span class="white--text mx-5"
+            >&copy; 2012 - {{ year() }} Amway в Урае</span
+          >
           <v-btn fab small text dark @click="scrollToTop">
             <v-icon>mdi-chevron-up</v-icon>
           </v-btn>
@@ -305,7 +313,9 @@
       </v-row>
       <v-row no-gutters class="hidden-md-and-up">
         <v-col cols="12" class="text-center">
-          <span class="white--text mx-5">&copy; 2019 Amway в Урае</span>
+          <span class="white--text mx-5"
+            >&copy; 2012 - {{ year() }} Amway в Урае</span
+          >
           <v-btn fab small text dark @click="scrollToTop">
             <v-icon>mdi-chevron-up</v-icon>
           </v-btn>
@@ -316,6 +326,7 @@
 </template>
 
 <script>
+import moment from 'moment'
 export default {
   props: {
     source: String
@@ -324,17 +335,19 @@ export default {
     drawer: null
   }),
   methods: {
+    year() {
+      return moment().year()
+    },
     scrollToTop() {
       window.scrollTo({ top: 0, left: 0, behavior: 'smooth' })
       this.drawer = false
     },
     layoutColor(area) {
-      if (this.$router.currentRoute.path === '/') return 'green '
-      if (this.$router.currentRoute.path === '/skin')
-        return 'deep-orange darken-4'
+      if (this.$router.currentRoute.path === '/') return 'green'
+      if (this.$router.currentRoute.path === '/body') return '#f48c3b'
       if (this.$router.currentRoute.path === '/hair') return 'blue darken-3'
-      if (this.$router.currentRoute.path === '/home') return 'blue darken-1'
-      return 'blue darken-3'
+      if (this.$router.currentRoute.path === '/home') return '#374584'
+      return 'white'
     }
   }
 }

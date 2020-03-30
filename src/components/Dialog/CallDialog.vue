@@ -15,7 +15,7 @@
                   v-model="contact"
                   placeholder="Здесь вы можете написать, что Вам нужно и оставить свои контакты"
                   :rules="contactRules"
-                  :counter="100"
+                  :counter="150"
                   required
                 ></v-textarea>
               </v-col>
@@ -77,7 +77,7 @@ export default {
     contactRules: [
       v => !!v || 'Поле не должно быть пустым',
       v =>
-        (v && v.length <= 100) || 'Поле должно содержать не более 100 символов'
+        (v && v.length <= 150) || 'Поле должно содержать не более 150 символов'
     ]
   }),
   mounted() {

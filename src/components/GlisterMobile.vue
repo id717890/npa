@@ -55,6 +55,9 @@
       </v-row>
     </v-col>
     <v-col cols="12">
+      <favorite-mobile />
+    </v-col>
+    <v-col cols="12">
       <div class="bg1">
         <v-row class="py-12" no-gutters>
           <v-col cols="12" class="text-center">

@@ -71,93 +71,8 @@ const settings = {
   clickToClose: true
 }
 import CallDialog from '../components/Dialog/CallDialog'
-import moment from 'moment'
+import { mapGetters } from 'vuex'
 export default {
-  data: () => ({
-    week: moment().week(),
-    weeks: [
-      {
-        id: 13,
-        products: [
-          {
-            name: 'AMWAY™ Чистящее средство-гель для духовых шкафов',
-            img: 'img/h-item-0014.webp',
-            url: 'https://www.amway.ru/p/0014',
-            sales: 14,
-            color: 'red'
-          },
-          {
-            name: 'L.O.C.™ Многофункциональное чистящее средство',
-            img: 'img/h-item-0001.webp',
-            url: 'https://www.amway.ru/p/0001',
-            sales: 12,
-            color: 'teal'
-          },
-          {
-            name: 'Glister™ Многофункциональная зубная паста',
-            img: 'img/g-item-pasta.webp',
-            url: 'https://www.amway.ru/p/6833',
-            sales: 11,
-            color: 'green'
-          },
-          {
-            name: 'SA8™ Premium Порошок стиральный концентрированный',
-            img: 'img/h-item-109849.webp',
-            url: 'https://www.amway.ru/p/109849',
-            sales: 7,
-            color: 'blue'
-          },
-          {
-            name: 'DISH DROPS™ Концентрированная жидкость для мытья посуды',
-            img: 'img/h-item-110488-2.webp',
-            url: 'https://www.amway.ru/p/110488',
-            sales: 5,
-            color: 'yellow'
-          }
-        ]
-      },
-      {
-        id: 14,
-        products: [
-          {
-            name: 'Glister™ Многофункциональная зубная паста',
-            img: 'img/g-item-pasta.webp',
-            url: 'https://www.amway.ru/p/6833',
-            sales: 19,
-            color: 'green'
-          },
-          {
-            name: 'L.O.C.™ Многофункциональное чистящее средство',
-            img: 'img/h-item-0001.webp',
-            url: 'https://www.amway.ru/p/0001',
-            sales: 13,
-            color: 'teal'
-          },
-          {
-            name: 'AMWAY™ Чистящее средство-гель для духовых шкафов',
-            img: 'img/h-item-0014.webp',
-            url: 'https://www.amway.ru/p/0014',
-            sales: 12,
-            color: 'red'
-          },
-          {
-            name: 'SA8™ Premium Порошок стиральный концентрированный',
-            img: 'img/h-item-109849.webp',
-            url: 'https://www.amway.ru/p/109849',
-            sales: 7,
-            color: 'blue'
-          },
-          {
-            name: 'DISH DROPS™ Концентрированная жидкость для мытья посуды',
-            img: 'img/h-item-110488-2.webp',
-            url: 'https://www.amway.ru/p/110488',
-            sales: 5,
-            color: 'yellow'
-          }
-        ]
-      }
-    ]
-  }),
   methods: {
     openAmway(url) {
       window.open(url, '_blank')
@@ -168,15 +83,7 @@ export default {
     }
   },
   computed: {
-    favs() {
-      const week = this.weeks.find(x => x.id === this.week)
-      if (this.week && this.weeks) {
-        return week.products
-      }
-      return null
-    }
+    ...mapGetters(['favs'])
   }
 }
 </script>
-
-<style></style>

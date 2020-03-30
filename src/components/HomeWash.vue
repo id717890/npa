@@ -132,7 +132,7 @@
             color="success"
             @click="orderProduct($event, product.id)"
           >
-            <v-icon class="mr-3">mdi-basket</v-icon>
+            <v-icon class="mr-3">mdi-cart-plus</v-icon>
             Заказать
           </v-btn>
         </div>

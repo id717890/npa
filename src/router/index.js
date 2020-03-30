@@ -15,9 +15,9 @@ const routes = [
     component: () => import('../views/Home.vue')
   },
   {
-    path: '/skin',
-    name: 'Skin',
-    component: () => import('../views/Skin.vue')
+    path: '/body',
+    name: 'Body',
+    component: () => import('../views/Body.vue')
   },
   {
     path: '/hair',
