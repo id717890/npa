@@ -33,6 +33,14 @@
             <v-list-item-title>ДОМ</v-list-item-title>
           </v-list-item-content>
         </v-list-item>
+        <v-list-item link to="/body">
+          <v-list-item-action>
+            <img :src="require('../public/img/n1.png')" alt="" />
+          </v-list-item-action>
+          <v-list-item-content>
+            <v-list-item-title>УХОД ЗА ТЕЛОМ</v-list-item-title>
+          </v-list-item-content>
+        </v-list-item>
         <v-list-item link target="_blank" href="tel:+79527247500">
           <v-list-item-action>
             <v-icon>mdi-phone-in-talk</v-icon>

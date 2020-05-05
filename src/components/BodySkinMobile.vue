@@ -27,10 +27,11 @@
               alt=""
             />
             <div
-              class="tb2"
+              class="tb2 text-white"
               data-aos="fade-up"
               data-aos-duration="600"
               data-aos-delay="500"
+              style="text-shadow: 2px 2px 4px black, 0 0 1em black;"
             >
               Коллекция средств <strong>G&H</strong> от Amway для ухода за кожей
               для всех членов семьи независимо от пола, возраста и типа кожи

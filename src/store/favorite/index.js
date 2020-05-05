@@ -342,6 +342,129 @@ const state = {
           color: 'blue'
         }
       ]
+    },
+    {
+      id: 21,
+      products: [
+        {
+          name: 'AMWAY™ Чистящее средство-гель для духовых шкафов',
+          img: 'img/h-item-0014.webp',
+          url: 'https://www.amway.ru/p/0014',
+          sales: 14,
+          color: 'red'
+        },
+        {
+          name: 'L.O.C.™ Многофункциональное чистящее средство',
+          img: 'img/h-item-0001.webp',
+          url: 'https://www.amway.ru/p/0001',
+          sales: 12,
+          color: 'teal'
+        },
+        {
+          name: 'Glister™ Многофункциональная зубная паста',
+          img: 'img/g-item-pasta.webp',
+          url: 'https://www.amway.ru/p/6833',
+          sales: 11,
+          color: 'green'
+        },
+        {
+          name: 'SA8™ Premium Порошок стиральный концентрированный',
+          img: 'img/h-item-109849.webp',
+          url: 'https://www.amway.ru/p/109849',
+          sales: 7,
+          color: 'blue'
+        },
+        {
+          name: 'DISH DROPS™ Концентрированная жидкость для мытья посуды',
+          img: 'img/h-item-110488-2.webp',
+          url: 'https://www.amway.ru/p/110488',
+          sales: 5,
+          color: 'yellow'
+        }
+      ]
+    },
+    {
+      id: 22,
+      products: [
+        {
+          name: 'Glister™ Многофункциональная зубная паста',
+          img: 'img/g-item-pasta.webp',
+          url: 'https://www.amway.ru/p/6833',
+          sales: 19,
+          color: 'green'
+        },
+        {
+          name: 'L.O.C.™ Многофункциональное чистящее средство',
+          img: 'img/h-item-0001.webp',
+          url: 'https://www.amway.ru/p/0001',
+          sales: 13,
+          color: 'teal'
+        },
+        {
+          name: 'AMWAY™ Чистящее средство-гель для духовых шкафов',
+          img: 'img/h-item-0014.webp',
+          url: 'https://www.amway.ru/p/0014',
+          sales: 12,
+          color: 'red'
+        },
+        {
+          name: 'SA8™ Premium Порошок стиральный концентрированный',
+          img: 'img/h-item-109849.webp',
+          url: 'https://www.amway.ru/p/109849',
+          sales: 7,
+          color: 'blue'
+        },
+        {
+          name: 'DISH DROPS™ Концентрированная жидкость для мытья посуды',
+          img: 'img/h-item-110488-2.webp',
+          url: 'https://www.amway.ru/p/110488',
+          sales: 5,
+          color: 'yellow'
+        }
+      ]
+    },
+    {
+      id: 23,
+      products: [
+        {
+          name:
+            'Glister™ Концентрированная жидкость для полоскания полости рта',
+          img: 'img/g-item-liquid.webp',
+          url: 'https://www.amway.ru/p/9949',
+          sales: 12,
+          color: 'green'
+        },
+        {
+          name: 'L.O.C.™ Влажные очищающие салфетки',
+          img: 'img/h-item-110485.webp',
+          url:
+            'https://www.amway.ru/l-o-c-vlazhnye-ochishchayushchie-salfetki/p/110485',
+          sales: 11,
+          color: 'teal'
+        },
+        {
+          name: 'DISH DROPS™ SCRUB BUDS™ Металлические губки',
+          img: 'img/h-item-110490.webp',
+          url:
+            'https://www.amway.ru/dish-drops-scrub-buds-metallicheskie-gubki/p/110490',
+          sales: 7,
+          color: 'red'
+        },
+        {
+          name: 'AMWAY™ Чистящее средство-гель для духовых шкафов',
+          img: 'img/h-item-0014.webp',
+          url: 'https://www.amway.ru/p/0014',
+          sales: 5,
+          color: 'blue'
+        },
+        {
+          name: 'Glister™ Многофункциональная зубная паста',
+          img: 'img/g-item-pasta.webp',
+          url: 'https://www.amway.ru/p/6833',
+          sales: 4,
+          color: 'yellow'
+        }
+      ]
     }
   ]
 }
