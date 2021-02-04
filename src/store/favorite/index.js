@@ -471,24 +471,24 @@ const state = {
 
 // actions
 const actions = {
-  async createCallback({ commit }, payload) {
-    return new Promise((resolve, reject) => {
-      context
-        .createCallback(payload)
-        .then(x => {
-          if (x.status === 200) {
-            resolve()
-          } else {
-            console.log(x.response.data)
-            reject(x.response.data)
-          }
-        })
-        .catch(x => {
-          console.log(x.response.data)
-          reject(x.response.data)
-        })
-    })
-  },
+  // async createCallback({ commit }, payload) {
+  //   return new Promise((resolve, reject) => {
+  //     context
+  //       .createCallback(payload)
+  //       .then(x => {
+  //         if (x.status === 200) {
+  //           resolve()
+  //         } else {
+  //           console.log(x.response.data)
+  //           reject(x.response.data)
+  //         }
+  //       })
+  //       .catch(x => {
+  //         console.log(x.response.data)
+  //         reject(x.response.data)
+  //       })
+  //   })
+  // },
   async saveAdminFeedback({ commit, dispatch }, payload) {
     // console.log(payload)
     dispatch('clearAllMessages')

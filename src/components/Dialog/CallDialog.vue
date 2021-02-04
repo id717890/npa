@@ -6,14 +6,22 @@
           <v-container>
             <v-row no-gutters>
               <v-col sm="12" cols="12">
-                <v-alert type="success">
+                <!-- <v-alert type="success">
                   {{ notify }}
-                </v-alert>
+                </v-alert> -->
                 <v-alert type="info">
                   {{ notify2 }}
                 </v-alert>
-                <v-textarea
+                <v-text-field
                   :autofocus="true"
+                  required
+                  filled
+                  v-model="phone"
+                  :rules="textRulers"
+                  placeholder="Телефон / E-mail"
+                  :counter="40"
+                ></v-text-field>
+                <v-textarea
                   filled
                   v-model="contact"
                   placeholder="Здесь вы можете написать, что Вам нужно и оставить свои контакты"
@@ -71,14 +79,19 @@ export default {
     success: false,
     error: false,
     loading: false,
-    valid: true,
+    valid: false,
     contact: null,
+    phone: null,
     labelRu:
       'Введите имя, контакты для связи (E-mail или телефон) и краткое сообщение',
     notify:
       'Прямо в тексте сообщения укажите имя и контакты (E-mail или телефон) чтобы мы могли связаться с Вами',
     notify2:
       'Если Вам нужно несколько товаром или вы не нашли товар на сайте, укажите их наименования прямо в тексте',
+    textRulers: [
+      v => !!v || 'Укажите контакты',
+      v => (v && v.length <= 40) || 'Поле должно содержать не более 40 символов'
+    ],
     contactRules: [
       v => !!v || 'Поле не должно быть пустым',
       v =>
@@ -99,7 +112,7 @@ export default {
       e.preventDefault()
       this.loading = true
       if (this.$refs.form.validate()) {
-        this.createCallback({ contact: 'Amway сайт', result: this.contact })
+        this.createCallback({ contact: this.phone, result: this.contact })
           .then(() => {
             this.loading = false
             this.form = false

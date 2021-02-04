@@ -10,6 +10,13 @@ import 'aos/dist/aos.css'
 import AOS from 'aos'
 import Favorite from './components/Favorite'
 import FavoriteMobile from './components/FavoriteMobile'
+import VueYandexMetrika from 'vue-yandex-metrika'
+
+Vue.use(VueYandexMetrika, {
+  id: 62573530,
+  router: router,
+  env: process.env.NODE_ENV
+})
 
 AOS.init()
 Vue.use(VueJsModal, { dynamic: true })
